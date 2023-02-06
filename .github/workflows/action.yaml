@@ -28,4 +28,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
       - name: Build and package
-        run: aws s3 cp target/lib/junit-platform-commons-1.4.0.jar s3://mybucket2818/app-java.jar
+        run: aws s3 cp /home/ubuntu/actions-runner/_work/docker-java/docker-java/docker-java-app/target/lib/junit-platform-commons-1.4.0.jar s3://mybucket2818/app-java.jar
