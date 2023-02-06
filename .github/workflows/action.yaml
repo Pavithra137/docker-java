@@ -36,5 +36,5 @@ jobs:
           
       - name: Deploy artifact to Tomcat
         run: |     
-          sudo cp app.jar /opt/tomcat/webapps
+          sudo cp app.jar /home/ubuntu/apache-tomcat-8.5.85/webapps
           sudo systemctl restart tomcat
