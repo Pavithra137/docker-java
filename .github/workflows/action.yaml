@@ -37,4 +37,4 @@ jobs:
       - name: Deploy artifact to Tomcat
         run: |     
           sudo cp app.jar /opt/tomcat/webapps/ROOT.war
-          sudo systemctl restart tomcat8
+          sudo systemctl restart tomcat
