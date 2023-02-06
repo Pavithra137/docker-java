@@ -28,4 +28,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
       - name: Build and package
-        run: aws s3 cp target/app.jar s3://mybucket2818/app-java.jar
+        run: aws s3 cp target/lib/app.jar s3://mybucket2818/app-java.jar
