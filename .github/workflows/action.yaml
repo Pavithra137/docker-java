@@ -35,8 +35,6 @@ jobs:
           aws s3 cp s3://mybucket2818/app-java.jar app.jar
           
       - name: Deploy artifact to Tomcat
-        run: |
-          sudo apt-get update
-          sudo apt-get install tomcat8
-          sudo cp app.jar /var/lib/tomcat8/webapps/ROOT.war
+        run: |     
+          sudo cp app.jar /opt/tomcat/webapps/ROOT.war
           sudo systemctl restart tomcat8
