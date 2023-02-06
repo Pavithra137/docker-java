@@ -32,7 +32,7 @@ jobs:
       
       - name: Download artifact from S3
         run: 
-          aws s3 cp s3://my-bucket/app-java.jar app.jar
+          aws s3 cp s3://mybucket2818/app-java.jar app.jar
           
       - name: Deploy artifact to Tomcat
         run: |
